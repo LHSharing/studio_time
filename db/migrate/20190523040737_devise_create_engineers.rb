@@ -15,9 +15,10 @@ class DeviseCreateEngineers < ActiveRecord::Migration[5.2]
       ## Rememberable
       t.datetime :remember_created_at
 
-         t.string :provider
-         t.string :uid
-
+      t.string :provider
+      t.index :provider, unique: true
+      t.string :uid
+      t.index :uid, unique: true
       ## Trackable
        t.integer  :sign_in_count, default: 0, null: false
        t.datetime :current_sign_in_at

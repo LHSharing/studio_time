@@ -35,15 +35,23 @@ ActiveRecord::Schema.define(version: 2019_05_23_044028) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_engineers_on_email", unique: true
+    t.index ["provider"], name: "index_engineers_on_provider", unique: true
     t.index ["reset_password_token"], name: "index_engineers_on_reset_password_token", unique: true
+    t.index ["uid"], name: "index_engineers_on_uid", unique: true
   end
 
   create_table "recording_sessions", force: :cascade do |t|
     t.datetime "appointment_date"
-    t.boolean "status"
-    t.integer "duration"
+    t.boolean "status", default: false
+    t.integer "duration", default: 30
+    t.integer "studio_id"
+    t.integer "engineer_id"
+    t.integer "artist_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["artist_id"], name: "index_recording_sessions_on_artist_id"
+    t.index ["engineer_id"], name: "index_recording_sessions_on_engineer_id"
+    t.index ["studio_id"], name: "index_recording_sessions_on_studio_id"
   end
 
   create_table "studios", force: :cascade do |t|

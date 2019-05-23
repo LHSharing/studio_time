@@ -99,20 +99,20 @@ engineers = Engineer.create([{email: "lu@lu.com", password: 'password', name: "L
 #RecordingSession.create(appointment_date: '6.1.2019', engineer: Engineer.first, studio: Studio.first, artist: Artist.first )
 RecordingSession.create(appointment_date: '7.3.2019', engineer: engineers[0], studio: studios[0], artist: artists[0])
 
-RecordingSession.create(appointment_date: '7.4.2019', engineer: engineers[5], studio: studios[5], artist: artists[5])
+RecordingSession.create(appointment_date: '19.7.2019', engineer: engineers[5], studio: studios[5], artist: artists[5])
 
-RecordingSession.create(appointment_date: '7.5.2019', engineer: engineers[1], studio: studios[1], artist: artists[1])
+RecordingSession.create(appointment_date: '27.7.2019', engineer: engineers[1], studio: studios[1], artist: artists[1])
 
-RecordingSession.create(appointment_date: '7.4.2019', engineer: engineers[5], studio: studios[7], artist: artists[6])
+RecordingSession.create(appointment_date: '14.7.2019', engineer: engineers[5], studio: studios[7], artist: artists[6])
 
-RecordingSession.create(appointment_date: '7.20.2019', engineer: engineers[2], studio: studios[2], artist: artists[2])
+RecordingSession.create(appointment_date: '21.7.2019', engineer: engineers[2], studio: studios[2], artist: artists[2])
 
-RecordingSession.create(appointment_date: '7.8.2019', engineer: engineers[6], studio: studios[7], artist: artists[8])
+RecordingSession.create(appointment_date: '23.7.2019', engineer: engineers[6], studio: studios[7], artist: artists[6])
 
-RecordingSession.create(appointment_date: '7.23.2019', engineer: engineers[3], studio: studios[3], artist: artists[3])
+RecordingSession.create(appointment_date: '24.7.2019', engineer: engineers[3], studio: studios[3], artist: artists[3])
 
-RecordingSession.create(appointment_date: '7.13.2019', engineer: engineers[7], studio: studios[7], artist: artists[7])
+RecordingSession.create(appointment_date: '17.7.2019', engineer: engineers[7], studio: studios[7], artist: artists[7])
 
-RecordingSession.create(appointment_date: '6.16.2019', engineer: engineers[4], studio: studios[4], artist: artists[4])
+RecordingSession.create(appointment_date: '16.7.2019', engineer: engineers[4], studio: studios[4], artist: artists[4])
 
-RecordingSession.create(appointment_date: '6.19.2019', engineer: engineers[6], studio: studios[1], artist: artists[2])
+RecordingSession.create(appointment_date: '12.7.2019', engineer: engineers[6], studio: studios[1], artist: artists[2])
